@@ -266,12 +266,12 @@ func sumType(a: Int, b: Int) -> Int {
     a + b
 }
 
-// 定义变量
+// 定义变量 - 调用时不需要参数标签
 var testTypeFn: (Int, Int) -> Int = sumType
 testTypeFn(10, 20)
 
 
-// 函数类型作为参数
+// 函数类型作为函数参数
 // (Int, Int) -> Int
 func sumType1(v1: Int, v2: Int) -> Int {
     v1 + v2
@@ -287,5 +287,85 @@ func printResultType(_ mainFunc: (Int, Int) -> Int, _ a: Int, _ b: Int) {
 
 printResultType(sumType1, 20, 10)
 printResultType(differenceType1, 20, 10)
+
+
+// 函数类型作为函数返回值
+// 返回值是函数类型的函数 -- 高阶函数 (Higher - Order Function)
+func next(_ input: Int) -> Int {
+    input + 1
+}
+
+func previous(_ input: Int) -> Int {
+    input - 1
+}
+
+func forward(_ forward: Bool) -> (Int) -> Int {
+    forward ? next : previous
+}
+
+forward(true)(3)
+forward(false)(3)
+
+
+/*:
+## 11. typealias
+ 
+ 用来给类型起别名
+*/
+typealias Byte = Int8
+typealias Short = Int16
+typealias Long = Int64
+
+typealias Date = (year: Int, month: Int, day: Int)
+func testTypeAlias(_ date: Date) {
+    print(date.year)
+    print(date.month)
+    print(date.day)
+}
+//testTypeAlias(date: (year: 2020, month: 8, day: 18))
+testTypeAlias((2020, 8, 18))
+
+
+typealias IntFn = (Int, Int) -> Int
+func differenceTypeAlias(v1: Int, v2: Int) -> Int {
+    v1 - v2
+}
+
+let intFnTypeAlias: IntFn = differenceTypeAlias;
+let resultTypeAliasDiff = intFnTypeAlias(20, 10)
+
+func setFnTypeAlias(_ fn: IntFn) {
+    let result = fn(11, 22)
+}
+setFnTypeAlias(differenceTypeAlias)
+
+func getFnTypeAlias() -> IntFn {
+    differenceTypeAlias
+}
+setFnTypeAlias(getFnTypeAlias())
+
+// 这里还可以看下，按照 swift 标准库的定义， Void 就是空元组()
+// public typealias Void = ()
+
+
+
+
+/*:
+## 12. 嵌套函数 (Nested Fuction)
+ 
+ 将函数定义在函数内部
+*/
+func forward111(_ forward: Bool) -> (Int) -> Int {
+    
+    func next(_ input: Int) -> Int {
+        input + 1
+    }
+    func previous(_ input: Int) -> Int {
+        input - 1
+    }
+    return forward ? next : previous
+}
+
+let result111 = forward111(true)(8)
 
 //: [Next](@next)
