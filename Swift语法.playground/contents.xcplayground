@@ -4,5 +4,6 @@
         <page name='01-基础语法'/>
         <page name='02-流程控制'/>
         <page name='03-函数'/>
+        <page name='04-枚举'/>
     </pages>
 </playground>

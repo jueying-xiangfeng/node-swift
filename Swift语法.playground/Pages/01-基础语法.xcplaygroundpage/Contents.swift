@@ -132,7 +132,6 @@ let (justStatusCode, _) = http404Error
 let http200Status = (statusCode: 200, statusMessage: "OK")
 print("status code is \(http200Status.statusCode)")
 
-
 //: [Next](@next)
 
 

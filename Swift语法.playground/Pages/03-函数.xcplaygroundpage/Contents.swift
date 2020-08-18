@@ -336,6 +336,7 @@ let resultTypeAliasDiff = intFnTypeAlias(20, 10)
 
 func setFnTypeAlias(_ fn: IntFn) {
     let result = fn(11, 22)
+    print(result)
 }
 setFnTypeAlias(differenceTypeAlias)
 
