@@ -5,47 +5,36 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B8984BFB-593C-42C1-8DEF-DF92513E0CAB"
-            shouldBeEnabled = "Yes"
+            uuid = "4B2E311E-F4BD-4774-8D62-70FDB6844470"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "*0x100007657">
-            <Locations>
-               <Location
-                  uuid = "B8984BFB-593C-42C1-8DEF-DF92513E0CAB - 7cb856893262b4f0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "storeEnumTagSinglePayload value witness for TestEnum #1 in TestSwift.enumTest4() -&gt; ()"
-                  moduleName = "TestSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/%3Ccompiler-generated%3E"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "151">
-               </Location>
-            </Locations>
+            filePath = "TestSwift/StructAndClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "structAndClassTest5()"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
          <BreakpointContent
-            uuid = "C254BC9B-C1B1-4E21-93A1-2D5672A7767C"
+            uuid = "8E6A180D-66F9-4967-8192-1C2651799069"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            symbolName = "*0x10000768c">
+            symbolName = "*0x10000a0a2">
             <Locations>
                <Location
-                  uuid = "C254BC9B-C1B1-4E21-93A1-2D5672A7767C - 7cb856893262b4f0"
+                  uuid = "8E6A180D-66F9-4967-8192-1C2651799069 - 7b7d3566c81e1fe3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "storeEnumTagSinglePayload value witness for TestEnum #1 in TestSwift.enumTest4() -&gt; ()"
+                  symbolName = "getEnumTagSinglePayload value witness for TestEnum #1 in TestSwift.enumTest2() -&gt; ()"
                   moduleName = "TestSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/%3Ccompiler-generated%3E"
@@ -53,9 +42,25 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "204">
+                  offsetFromSymbolStart = "66">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05DF873E-708F-476C-9EA6-1409FBE4D1EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestSwift/StructAndClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "371"
+            endingLineNumber = "371"
+            landmarkName = "test11()"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

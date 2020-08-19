@@ -8,10 +8,8 @@
 
 import Foundation
 
-
-
-
 /************************/
+// MARK: - 枚举
 /*
  枚举内存窥探
  */
@@ -20,7 +18,7 @@ import Foundation
 //enumTest3()
 //enumTest4()
 //enumTest5()
-enumTest6()
+//enumTest6()
 
 
 //enum TestEnum {
@@ -57,3 +55,25 @@ enumTest6()
 //
 //
 //print(Mems.ptr(ofVal: &t1))
+
+
+/************************/
+// MARK: - 结构体、类
+//structAndClassTest1()
+//structAndClassTest2()
+//structAndClassTest3()
+//structAndClassTest4()
+//structAndClassTest5()
+structAndClassTest6()
+
+/// 汇编层面分析
+//struct Point {
+//    var x: Int
+//    var y: Int
+//}
+//
+//var p1 = Point(x: 10, y: 20)
+//var p2 = p1
+//p2.x = 11
+//p2.y = 22
+//print("---")
