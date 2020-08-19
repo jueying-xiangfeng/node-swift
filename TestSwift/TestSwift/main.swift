@@ -16,7 +16,7 @@ import Foundation
 //enumTest1()
 //enumTest2()
 //enumTest3()
-//enumTest4()
+enumTest4()
 //enumTest5()
 //enumTest6()
 
@@ -64,7 +64,7 @@ import Foundation
 //structAndClassTest3()
 //structAndClassTest4()
 //structAndClassTest5()
-structAndClassTest6()
+//structAndClassTest6()
 
 /// 汇编层面分析
 //struct Point {
