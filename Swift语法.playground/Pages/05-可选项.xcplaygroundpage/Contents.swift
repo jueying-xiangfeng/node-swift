@@ -250,4 +250,127 @@ login2(["username" : "key", "password" : "123"])
 login2(["username1" : "key1", "password1" : "123"])
 
 
+
+
+/*:
+## 6. 隐式解包 (Implicitly Unwrapped Optional)
+ 
+ - 在某些情况下，可选项一旦被设定只之后，就会一直拥有值
+ - 在这种情况下，可以去掉检查，也不必每次访问的时候都进行解包，因为它能确定每次访问的时候都有值
+ - 可以在类型后面加个感叹号! 定义一个隐式解包可选项
+*/
+let n1: Int! = 10
+let n2: Int = n1
+if n1 != nil {
+    
+}
+if let temp = n1 {
+    print("隐式解包 temp -- \(temp)")
+}
+
+// 注意，这里需要隐式解包的变量不能为 nil
+// Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+//let n11: Int! = nil
+//let n22: Int = n11
+
+
+
+/*:
+## 7. 字符串插值
+ 
+ 可选项在字符串插值或者直接打印时，编译器会发出警告
+*/
+var c1: Int? = 10
+print(c1)
+print("c1 == \(c1)")
+
+// 消除警告方法
+// - 1
+print("c1 == \(String(describing: c1))")
+
+// -2
+print("c1 == \(c1!)")
+
+// -3
+print("c1 == \(c1 ?? 0)")
+
+
+/*:
+## 8. 多重可选项
+ 
+ 可以使用 lldb 指令: frame Variable -R (fr v -R) 查看区别
+*/
+
+/*
+ (Swift.Optional<Swift.Int>) r1 = some {
+   some = {
+     _value = 10
+   }
+ }
+ */
+var r1: Int? = 10
+
+/*
+ (Swift.Optional<Swift.Optional<Swift.Int>>) r2 = some {
+   some = some {
+     some = {
+       _value = 10
+     }
+   }
+ }
+ */
+var r2: Int?? = r1
+
+/*
+ (Swift.Optional<Swift.Optional<Swift.Int>>) r3 = some {
+   some = some {
+     some = {
+       _value = 10
+     }
+   }
+ }
+ */
+var r3: Int?? = 10
+
+print(r2 == r3)
+
+/*
+ (Swift.Optional<Swift.Int>) r11 = none {
+   some = {
+     _value = 0
+   }
+ }
+ */
+var r11: Int? = nil
+
+/*
+ (Swift.Optional<Swift.Optional<Swift.Int>>) r22 = some {
+   some = none {
+     some = {
+       _value = 0
+     }
+   }
+ }
+ */
+var r22: Int?? = r11
+
+/*
+ (Swift.Optional<Swift.Optional<Swift.Int>>) r33 = none {
+   some = some {
+     some = {
+       _value = 0
+     }
+   }
+ }
+*/
+var r33: Int?? = nil
+
+print(r22 == r33)
+print(r11 == r33)
+
+(r22 ?? 1) ?? 2
+(r33 ?? 1) ?? 2
+
+
+
 //: [Next](@next)

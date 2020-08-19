@@ -136,21 +136,18 @@ func enumTest4() {
 //    t = .test5
     
     
-    switch t1 {
-    case let .test1(a1, a2, a3):
-        print("test1 -", a1, "-", a2, "-", a3)
-    case let .test2(a1, a2):
-        print("test2 -", a1, "-", a2)
-    case let .test3(a1):
-        print("test3 -", a1)
-    case let .test4(a1):
-        print("test4 -", a1)
-    case .test5:
-        print("test5 -")
-    }
-    
-    var aa = 1 ?? 2
-    
+//    switch t1 {
+//    case let .test1(a1, a2, a3):
+//        print("test1 -", a1, "-", a2, "-", a3)
+//    case let .test2(a1, a2):
+//        print("test2 -", a1, "-", a2)
+//    case let .test3(a1):
+//        print("test3 -", a1)
+//    case let .test4(a1):
+//        print("test4 -", a1)
+//    case .test5:
+//        print("test5 -")
+//    }
     
     print(Mems.ptr(ofVal: &t1))
     
@@ -158,4 +155,46 @@ func enumTest4() {
     print(MemoryLayout<TestEnum>.size)      // 1
     print(MemoryLayout<TestEnum>.stride)    // 1
     print(MemoryLayout<TestEnum>.alignment) // 1
+}
+
+
+/// 字符串插值
+func enumTest5() {
+    
+    let c1: Int? = 10
+//    print(c1)
+//    print("c1 == \(c1)")
+    
+    print("c1 == \(c1!)")
+    print("c1 == \(String(describing: c1))")
+    print("c1 == \(c1 ?? 0)")
+}
+
+
+/// 多重可选项
+func enumTest6() {
+    
+//    var r1: Int? = 10
+//    var r2: Int?? = r1
+//    var r3: Int?? = 10
+//
+//    print(r2 == r3)
+//
+//    var r11: Int? = nil
+//    var r22: Int?? = r11
+//    var r33: Int?? = nil
+//
+//    print(r22 == r33)
+//    print(r11 == r33)
+//
+//    (r22 ?? 1) ?? 2
+//    (r33 ?? 1) ?? 2
+    
+//    var num1: Int? = nil
+//    var num2: Int?? = num1
+//    var num3: Int?? = nil
+//
+//    var a1 = num2 ?? 1
+//
+//    print("aa")
 }

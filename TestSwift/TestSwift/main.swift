@@ -19,6 +19,8 @@ import Foundation
 //enumTest2()
 //enumTest3()
 //enumTest4()
+//enumTest5()
+enumTest6()
 
 
 //enum TestEnum {

@@ -14,19 +14,19 @@
             symbolName = "*0x100007657">
             <Locations>
                <Location
-                  uuid = "B8984BFB-593C-42C1-8DEF-DF92513E0CAB - 198a2539f8472f62"
+                  uuid = "B8984BFB-593C-42C1-8DEF-DF92513E0CAB - 7cb856893262b4f0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "main"
+                  symbolName = "storeEnumTagSinglePayload value witness for TestEnum #1 in TestSwift.enumTest4() -&gt; ()"
                   moduleName = "TestSwift"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/TestSwift/main.swift"
+                  urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/%3Ccompiler-generated%3E"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "119">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "151">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -41,19 +41,19 @@
             symbolName = "*0x10000768c">
             <Locations>
                <Location
-                  uuid = "C254BC9B-C1B1-4E21-93A1-2D5672A7767C - 198a2539f8472f62"
+                  uuid = "C254BC9B-C1B1-4E21-93A1-2D5672A7767C - 7cb856893262b4f0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "main"
+                  symbolName = "storeEnumTagSinglePayload value witness for TestEnum #1 in TestSwift.enumTest4() -&gt; ()"
                   moduleName = "TestSwift"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/TestSwift/main.swift"
+                  urlString = "file:///Users/wangxiangfeng/Work/Code/node-swift/TestSwift/%3Ccompiler-generated%3E"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "172">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "204">
                </Location>
             </Locations>
          </BreakpointContent>
