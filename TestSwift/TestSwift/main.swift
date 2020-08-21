@@ -16,7 +16,7 @@ import Foundation
 //enumTest1()
 //enumTest2()
 //enumTest3()
-enumTest4()
+//enumTest4()
 //enumTest5()
 //enumTest6()
 
@@ -77,3 +77,35 @@ enumTest4()
 //p2.x = 11
 //p2.y = 22
 //print("---")
+
+
+
+/************************/
+// MARK: - 闭包
+//closureTest1()
+//closureTest2()
+
+
+class Person {
+    var age = 1
+}
+
+typealias Fn = (Int) -> Int
+func getFn() -> Fn {
+    var a1 = 1
+    var a2 = 2
+    func plus(_ i: Int) -> Int {
+        a1 += i
+        a2 += i
+        return a1 + a2
+    }
+    return plus
+} // 返回的 plus 和 num 形成闭包
+
+var fn1 = getFn()
+
+//print(MemoryLayout.stride(ofValue: fn1))
+
+fn1(1)
+//print(fn1(1))
+

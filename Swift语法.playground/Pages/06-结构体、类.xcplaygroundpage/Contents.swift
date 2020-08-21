@@ -99,7 +99,4 @@ TestSwift`init(x:y:) in Point #1 in structAndClassTest5():
 
 
 
-
-
-
 //: [Next](@next)
