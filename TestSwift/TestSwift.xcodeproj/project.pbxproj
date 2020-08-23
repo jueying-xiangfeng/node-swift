@@ -12,6 +12,7 @@
 		78FA2FE324EBABCD0088A8B0 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2FE224EBABCD0088A8B0 /* Enum.swift */; };
 		78FA2FE524EBACB00088A8B0 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2FE424EBACB00088A8B0 /* Mems.swift */; };
 		78FA2FE724ECD5310088A8B0 /* StructAndClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2FE624ECD5310088A8B0 /* StructAndClass.swift */; };
+		EAEA7E4A24F12ABB0033E241 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEA7E4924F12ABB0033E241 /* Property.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		78FA2FE224EBABCD0088A8B0 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		78FA2FE424EBACB00088A8B0 /* Mems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mems.swift; sourceTree = "<group>"; };
 		78FA2FE624ECD5310088A8B0 /* StructAndClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructAndClass.swift; sourceTree = "<group>"; };
+		EAEA7E4924F12ABB0033E241 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				78FA2FE224EBABCD0088A8B0 /* Enum.swift */,
 				78FA2FE624ECD5310088A8B0 /* StructAndClass.swift */,
 				789AAC1D24EE749D001577F0 /* Closure.swift */,
+				EAEA7E4924F12ABB0033E241 /* Property.swift */,
 				78FA2FE424EBACB00088A8B0 /* Mems.swift */,
 			);
 			path = TestSwift;
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEA7E4A24F12ABB0033E241 /* Property.swift in Sources */,
 				78FA2FE524EBACB00088A8B0 /* Mems.swift in Sources */,
 				78FA2FE724ECD5310088A8B0 /* StructAndClass.swift in Sources */,
 				789AAC1E24EE749D001577F0 /* Closure.swift in Sources */,

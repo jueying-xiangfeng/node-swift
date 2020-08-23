@@ -141,9 +141,9 @@ func closureTest2() {
         return plus
     } // 返回的 plus 和 num 形成闭包
     
-    var fn1 = getFn()
-    fn1(1)
-    fn1(2)
+//    var fn1 = getFn()
+//    fn1(1)
+//    fn1(2)
     
 //    print(fn1(1))
 //    print(fn1(2))
@@ -165,4 +165,36 @@ func closureTest2() {
 //    var cl2 = Closure()
 //    cl1.plus(1)
 //    cl1.plus(2)
+}
+
+// MARK: - 自动闭包
+///
+/// @autoclosure 会自动将 20 封装成闭包 { 20 }
+/// @autoclosure 只支持 () -> T 格式的参数
+/// @autoclosure 并非只支持最后一个参数
+/// 空合并运算符 ?? 使用了 @autoclosure 技术
+/// 有 @autoclosure、无 @autoclosure 构成函数重载
+func closureTest3() {
+    
+    func getFirstPositive(_ v1: Int, _ v2: Int) -> Int {
+        return v1 > 0 ? v1 : v2
+    }
+    print(getFirstPositive(10, 20))
+    
+    /// 改成函数类型的参数，可以让 v2 延迟加载
+    func getFirstPositive1(_ v1: Int, _ v2: () -> Int) -> Int {
+        return v1 > 0 ? v1 : v2()
+    }
+    func getNum() -> Int {
+        print("----------")
+        return 20
+    }
+    
+    print(getFirstPositive1(10, getNum))
+    
+    /// 为了避免与期望冲突，使用了 @autoclosure 的地方最好明确注释清楚，这个值会被退出执行
+    func getFirstPositive2(_ v1: Int, _ v2: @autoclosure () -> Int) -> Int {
+        return v1 > 0 ? v1 : v2()
+    }
+    print(getFirstPositive2(10, 20))
 }

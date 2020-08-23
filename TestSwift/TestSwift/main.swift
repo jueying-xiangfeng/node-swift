@@ -84,28 +84,36 @@ import Foundation
 // MARK: - 闭包
 //closureTest1()
 //closureTest2()
+//closureTest3()
 
-
-class Person {
-    var age = 1
-}
-
-typealias Fn = (Int) -> Int
-func getFn() -> Fn {
-    var a1 = 1
-    var a2 = 2
-    func plus(_ i: Int) -> Int {
-        a1 += i
-        a2 += i
-        return a1 + a2
-    }
-    return plus
-} // 返回的 plus 和 num 形成闭包
-
-var fn1 = getFn()
-
+//class Person {
+//    var age = 1
+//}
+//
+//typealias Fn = (Int) -> Int
+//func getFn() -> Fn {
+//    var a1 = 1
+//    var a2 = 2
+//    func plus(_ i: Int) -> Int {
+//        a1 += i
+//        a2 += i
+//        return a1 + a2
+//    }
+//    return plus
+//} // 返回的 plus 和 num 形成闭包
+//
+//var fn1 = getFn()
+//
 //print(MemoryLayout.stride(ofValue: fn1))
-
-fn1(1)
+//
+//fn1(1)
 //print(fn1(1))
 
+
+/************************/
+// MARK: - 属性
+//propertyTest1()
+//propertyTest2()
+//propertyTest3()
+//propertyTest4()
+propertyTest5()
