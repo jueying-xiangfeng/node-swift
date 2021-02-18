@@ -58,7 +58,6 @@ if a4 != nil {
 }
 
 
-
 /*:
 ## 3. 可选项绑定 (Optional Binding)
  
@@ -114,7 +113,6 @@ while let values = Int(strs[index]), values > 0 {
     index += 1
 }
 print(sum)
-
 
 
 /*:

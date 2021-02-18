@@ -120,22 +120,31 @@ func enumTest3() {
 
 
 // 枚举 - 关联值
-enum TestEnum {
-    case test1(Int, Int, Int)
-    case test2(Int, Int)
-    case test3(Int)
-    case test4(Bool)
-    case test5
-}
+//enum TestEnum {
+//    case test1(Int, Int, Int)
+//    case test2(Int, Int)
+//    case test3(Int)
+//    case test4(Bool)
+//    case test5
+//}
 
 
-func a111() -> TestEnum {
-    TestEnum.test2(10, 20)
-}
+//func a111() -> TestEnum {
+//    TestEnum.test2(10, 20)
+//}
 
 /// switch 原理 -- 汇编分析
 func enumTest4() {
-    var t1 = a111()
+    
+    enum TestEnum {
+        case test1(Int, Int, Int)
+        case test2(Int, Int)
+        case test3(Int)
+        case test4(Bool)
+        case test5
+    }
+    
+    var t1 = TestEnum.test2(10, 20)
     
 //    print(Mems.ptr(ofVal: &t1))
     

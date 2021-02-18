@@ -51,7 +51,17 @@ var pk3 = PointK(y: 10)
 var pk4 = PointK(x: 10, y: 10)
 
 
+class PointA {
+    var x: Int
+    var y: Int
+    
+    init() {
+        x = 0
+        y = 0
+    }
+}
 
+let pa1 = PointA()
 
 
 /*

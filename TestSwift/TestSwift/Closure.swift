@@ -107,21 +107,36 @@ func closureTest1_2() {
         return i1 > i2
     }
     nums.sort(by: cmp)
-    print(nums)
+    print(1, nums)
     
     nums.sort(by: {
         (i1: Int, i2: Int) -> Bool in
         return i1 < i2
     })
+    print(2, nums)
+    
     nums.sort(by: { i1, i2 in return i1 < i2 })
+    print(3, nums)
+    
     nums.sort(by: { i1, i2 in i1 < i2 })
+    print(4, nums)
+    
     nums.sort(by: { $0 < $1 })
+    print(5, nums)
+    
     nums.sort(by: <)
+    print(6, nums)
+    
     nums.sort() { $0 < $1 }
+    print(7, nums)
+    
     nums.sort { $0 < $1 }
+    print(8, nums)
+    
     nums.sort { (i1, i2) -> Bool in
         i1 > i2
     }
+    print(9, nums)
 }
 
 
@@ -154,18 +169,69 @@ func closureTest2() {
     /// 内存在堆空间
     /// 捕获的局部变量、常量就是对象的成员(存储属性)
     /// 组成闭包的函数就是类内部定义的方法
-//    class Closure {
-//        var num = 0
-//        func plus(_ i: Int) -> Int {
-//            num += i
-//            return num
-//        }
-//    }
-//    var cl1 = Closure()
-//    var cl2 = Closure()
-//    cl1.plus(1)
-//    cl1.plus(2)
+    class Closure {
+        var num1 = 0
+        var num2 = 0
+        
+        func plus(_ i: Int) -> (Int, Int) {
+            num1 += i
+            num2 += i << 1
+            return (num1, num2)
+        }
+        
+        func minus(_ i: Int) -> (Int, Int) {
+            num1 -= i;
+            num2 -= i << 1
+            return (num1, num2)
+        }
+    }
+    let cs = Closure()
+    print(cs.plus(1))  // (1, 2)
+    print(cs.minus(2)) // (-1, -2)
+    print(cs.plus(3))  // (2, 4)
+    print("----------------")
+    
+    closureTest2_1()
+//    closureTest2_2()
 }
+
+func closureTest2_1() {
+    
+    var funcions: [() -> Int] = []
+    
+    for i in 1...3 {
+        funcions.append { () -> Int in
+            i
+        }
+    }
+//    for item in funcions {
+//        print(item.self, item(), separator:"===")
+//    }
+//    print("----------------")
+}
+
+func closureTest2_2() {
+    
+    class Closure {
+        var i: Int
+        init(item i: Int) {
+            self.i = i
+        }
+        func get() -> Int {
+            return i
+        }
+    }
+    
+    var clses: [Closure] = []
+    for i in 1...3 {
+        clses.append(Closure(item: i))
+    }
+    
+    for cls in clses {
+        print(cls.get())
+    }
+}
+
 
 // MARK: - 自动闭包
 ///
@@ -192,7 +258,7 @@ func closureTest3() {
     
     print(getFirstPositive1(10, getNum))
     
-    /// 为了避免与期望冲突，使用了 @autoclosure 的地方最好明确注释清楚，这个值会被退出执行
+    /// 为了避免与期望冲突，使用了 @autoclosure 的地方最好明确注释清楚，这个值会被推迟执行
     func getFirstPositive2(_ v1: Int, _ v2: @autoclosure () -> Int) -> Int {
         return v1 > 0 ? v1 : v2()
     }

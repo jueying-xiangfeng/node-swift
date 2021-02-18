@@ -369,4 +369,7 @@ func forward111(_ forward: Bool) -> (Int) -> Int {
 
 let result111 = forward111(true)(8)
 
+let resultFunc: (Int) -> Int = forward111(true)
+let resultFunc1: Int = resultFunc(2)
+
 //: [Next](@next)

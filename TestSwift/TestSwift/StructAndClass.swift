@@ -142,13 +142,19 @@ func structAndClassTest2_1() {
     print(MemoryLayout<PointT>.alignment)   // 8
     
     struct PointT1 {
-        var x: Int = 0
-        var y: Int = 0
+        var x: Int = 10
+        var y: Int = 20
         var origin: Bool = true
     }
     print(MemoryLayout<PointT1>.size)        // 17
     print(MemoryLayout<PointT1>.stride)      // 24
     print(MemoryLayout<PointT1>.alignment)   // 8
+    
+    print("--------------------------")
+    var pt1 = PointT1()
+    
+    print(Mems.ptr(ofVal: &pt1))
+    print(Mems.memStr(ofVal: &pt1))
 }
 
 
@@ -325,21 +331,21 @@ func structAndClassTest6_1() {
      通过 class_getInstanceSize 可以得知：类对象至少需要占用多少内存
      */
     
-    class Point {
-        var x = 11  // 8
-        var test = true // 1
-        var y = 22  // 8
-    }
-    
-    let p = Point()
-    print(malloc_size(Mems.ptr(ofRef: p)))  // 48
-    
-    print(class_getInstanceSize(Point.self))    // 40
-    print(class_getInstanceSize(type(of: p)))   // 40
-    
-    print(MemoryLayout<Point>.size) // 8
-    print(MemoryLayout<Point>.stride)   // 8
-    print(MemoryLayout<Point>.alignment)    // 8
+//    class Point {
+//        var x = 11  // 8
+//        var test = true // 1
+//        var y = 22  // 8
+//    }
+//    
+//    let p = Point()
+//    print(malloc_size(Mems.ptr(ofRef: p)))  // 48
+//    
+//    print(class_getInstanceSize(Point.self))    // 40
+//    print(class_getInstanceSize(type(of: p)))   // 40
+//    
+//    print(MemoryLayout<Point>.size) // 8
+//    print(MemoryLayout<Point>.stride)   // 8
+//    print(MemoryLayout<Point>.alignment)    // 8
     
     
     /// 值类型、引用类型的 let
@@ -371,6 +377,28 @@ func test11() {
     var a = Point(x: 10, b1: true, x1: 11, b2: true, b3: true, y: 20)
     print(Mems.ptr(ofVal: &a))
     print(Mems.memStr(ofVal: &a))
+    print("----")
+    
+    class Size {
+        var width: Int
+        var b1: Bool
+        var height: Int
+        var b2: Bool
+        
+        init(width: Int, b1: Bool, b2: Bool, height: Int) {
+            self.width = width
+            self.height = height
+            self.b1 = b1
+            self.b2 = b2
+        }
+    }
+    
+    var s = Size(width: 10, b1: true, b2: true, height: 20)
+    print(Mems.ptr(ofVal: &s))
+    print(Mems.memStr(ofVal: &s))
+    
+    print(Mems.ptr(ofRef: s))
+    print(Mems.memStr(ofRef: s))
     
     print("----")
 }

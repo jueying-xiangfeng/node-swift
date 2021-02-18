@@ -28,7 +28,7 @@ switch dirUse {
     case .east:
         print("east")
     case .west:
-    print("west")
+        print("west")
 }
 
 

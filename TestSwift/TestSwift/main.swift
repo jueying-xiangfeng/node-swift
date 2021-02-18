@@ -82,30 +82,67 @@ import Foundation
 
 /************************/
 // MARK: - 闭包
+//class Person {
+//    var age = 10
+//}
+//
+//var p = Person()
+//print(MemoryLayout.stride(ofValue: p))
+//print(MemoryLayout<Person>.stride)
+//print(class_getInstanceSize(Person.self))
+
 //closureTest1()
 //closureTest2()
 //closureTest3()
 
+
+//var num111 = 10
+//
+//print(MemoryLayout<String>.stride)
+//print(MemoryLayout<Int>.stride)
+//
+//print(MemoryLayout.size(ofValue: num111))
+//print(MemoryLayout.stride(ofValue: num111))
+//print("-------")
+
+//func sum(_ v1: Int, _ v2: Int) -> Int { v1 + v2 }
+//
+//var fn = sum
+//print(MemoryLayout.stride(ofValue: fn))
+
+//print(fn(10, 20))
+
 //class Person {
-//    var age = 1
+//    var age = 10
 //}
 //
 //typealias Fn = (Int) -> Int
 //func getFn() -> Fn {
-//    var a1 = 1
-//    var a2 = 2
+////    var a1 = 1
+////    var a2 = 2
+//
+//    let p1 = Person()
+//    let p2 = Person()
+//
 //    func plus(_ i: Int) -> Int {
-//        a1 += i
-//        a2 += i
-//        return a1 + a2
+////        a1 += i
+////        a2 += i
+////        return a1 + a2
+//
+//        p1.age += i
+//        p2.age += i
+//        return p1.age + p2.age
 //    }
 //    return plus
 //} // 返回的 plus 和 num 形成闭包
 //
 //var fn1 = getFn()
+//fn1(1)
 //
+////print(fn1(1))
+//print(MemoryLayout.size(ofValue: fn1))
 //print(MemoryLayout.stride(ofValue: fn1))
-//
+
 //fn1(1)
 //print(fn1(1))
 
@@ -116,4 +153,4 @@ import Foundation
 //propertyTest2()
 //propertyTest3()
 //propertyTest4()
-propertyTest5()
+//propertyTest5()
