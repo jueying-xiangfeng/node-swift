@@ -163,7 +163,7 @@ func propertyTest3() {
     
     ///
     /// 延迟存储属性注意点
-    /// 当结构体包含一个延迟存储属性时，只有 var 才能访问演出存储属性
+    /// 当结构体包含一个延迟存储属性时，只有 var 才能访问延迟存储属性
     /// 因为延迟属性初始化时需要改变结构体的内存
     ///
     struct Point {
@@ -215,14 +215,21 @@ func propertyTest4() {
     
     
     func test(_ num: inout Int) {
+        print("test")
         num = 20
     }
     
     var s = Shape(width: 10, side: 4)
-    s.width = 10
+//    s.side = 11
+//    test(&s.width)
     
-    test(&s.side)
-    s.show()
+//    test(&s.side)
+//    s.show()
+    
+//    let aaa = s.girth
+    
+    
+    test(&s.girth)
     
     
     ///
@@ -299,7 +306,7 @@ func propertyTest5() {
             /// ...
             ///
             return FileManger1()
-        }
+        }()
         private init() {
             
         }
