@@ -154,3 +154,14 @@ import Foundation
 //propertyTest3()
 //propertyTest4()
 //propertyTest5()
+
+
+/************************/
+// MARK: - 方法
+//methodTest1()
+
+
+
+/************************/
+// MARK: - 下标
+subscriptTest1()

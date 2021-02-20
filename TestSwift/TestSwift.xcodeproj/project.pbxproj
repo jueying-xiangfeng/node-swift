@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AE457E025E0B5C400FD8CAE /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE457DF25E0B5C400FD8CAE /* Method.swift */; };
+		0AE457E325E0BB5900FD8CAE /* Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE457E225E0BB5900FD8CAE /* Subscript.swift */; };
 		789AAC1E24EE749D001577F0 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789AAC1D24EE749D001577F0 /* Closure.swift */; };
 		78FA2FDC24EBAB1F0088A8B0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2FDB24EBAB1F0088A8B0 /* main.swift */; };
 		78FA2FE324EBABCD0088A8B0 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA2FE224EBABCD0088A8B0 /* Enum.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AE457DF25E0B5C400FD8CAE /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		0AE457E225E0BB5900FD8CAE /* Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscript.swift; sourceTree = "<group>"; };
 		789AAC1D24EE749D001577F0 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		78FA2FD824EBAB1F0088A8B0 /* TestSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		78FA2FDB24EBAB1F0088A8B0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				78FA2FE624ECD5310088A8B0 /* StructAndClass.swift */,
 				789AAC1D24EE749D001577F0 /* Closure.swift */,
 				EAEA7E4924F12ABB0033E241 /* Property.swift */,
+				0AE457DF25E0B5C400FD8CAE /* Method.swift */,
+				0AE457E225E0BB5900FD8CAE /* Subscript.swift */,
 				78FA2FE424EBACB00088A8B0 /* Mems.swift */,
 			);
 			path = TestSwift;
@@ -105,7 +111,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
-				ORGANIZATIONNAME = "阅文";
+				ORGANIZATIONNAME = DiDi;
 				TargetAttributes = {
 					78FA2FD724EBAB1F0088A8B0 = {
 						CreatedOnToolsVersion = 11.2;
@@ -136,10 +142,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAEA7E4A24F12ABB0033E241 /* Property.swift in Sources */,
+				0AE457E325E0BB5900FD8CAE /* Subscript.swift in Sources */,
 				78FA2FE524EBACB00088A8B0 /* Mems.swift in Sources */,
 				78FA2FE724ECD5310088A8B0 /* StructAndClass.swift in Sources */,
 				789AAC1E24EE749D001577F0 /* Closure.swift in Sources */,
 				78FA2FE324EBABCD0088A8B0 /* Enum.swift in Sources */,
+				0AE457E025E0B5C400FD8CAE /* Method.swift in Sources */,
 				78FA2FDC24EBAB1F0088A8B0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
