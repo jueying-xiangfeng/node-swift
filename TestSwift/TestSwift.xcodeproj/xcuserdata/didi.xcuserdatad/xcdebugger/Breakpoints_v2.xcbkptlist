@@ -3,4 +3,87 @@
    uuid = "5702CFB4-8170-490E-B60A-EBC7B844DC5A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "BB3E5B1A-1D40-4C68-9592-9B0E0B2AF34D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x10001cba1">
+            <Locations>
+               <Location
+                  uuid = "BB3E5B1A-1D40-4C68-9592-9B0E0B2AF34D - b7009dd3f60f4791"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __derived_enum_equals(StateSwitch #1 in TestSwift.methodTest1() -&gt; (), StateSwitch #1 in TestSwift.methodTest1() -&gt; ()) -&gt; Swift.Bool in StateSwitch #1 in TestSwift.methodTest1() -&gt; ()"
+                  moduleName = "TestSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/didi/Work/iTea/key-node/node-swift/TestSwift/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "161">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "B78C36D1-E73F-414C-B3C4-5DEAAD87550D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x10001d059">
+            <Locations>
+               <Location
+                  uuid = "B78C36D1-E73F-414C-B3C4-5DEAAD87550D - 7b5a416b57aecd8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "type metadata accessor for TestSwift.Animal"
+                  moduleName = "TestSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/didi/Work/iTea/key-node/node-swift/TestSwift/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "7461AEC6-FB0B-4C24-BF02-610B1D5B1870"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x10001cf4d">
+            <Locations>
+               <Location
+                  uuid = "7461AEC6-FB0B-4C24-BF02-610B1D5B1870 - 1e2641e9577070a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "TestSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/didi/Work/iTea/key-node/node-swift/TestSwift/TestSwift/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
+                  offsetFromSymbolStart = "573">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

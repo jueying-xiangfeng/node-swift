@@ -164,4 +164,51 @@ import Foundation
 
 /************************/
 // MARK: - 下标
-subscriptTest1()
+//subscriptTest1()
+
+
+
+/************************/
+// MARK: - 继承
+//inheritanceTest1()
+//inheritanceTest2()
+//inheritanceTest3()
+//inheritanceTest4()
+//inheritanceTest5()
+
+/// 多态：
+
+//class Animal {
+//    func speak() {
+//        print("Animal speak")
+//    }
+//    func eat() {
+//        print("Animal eat")
+//    }
+//    func sleep() {
+//        print("Animal sleep")
+//    }
+//}
+//
+//var anim: Animal = Animal()
+//anim.speak()
+//anim.eat()
+//anim.sleep()
+//
+//class Dog : Animal {
+//    override func speak() {
+//        print("Dog speak")
+//    }
+//    override func eat() {
+//        print("Dog eat")
+//    }
+////        override func sleep() {
+////            print("Dog sleep")
+////        }
+//}
+//
+//anim = Dog()
+//anim.speak()
+//anim.eat()
+//anim.sleep()
+
